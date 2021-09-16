@@ -1,0 +1,120 @@
+body {
+    background-color: #000000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/* ----------------------------------------------- */
+}
+@keyframes first {
+    50%{
+        transform: rotate(0.5turn);
+    }
+    100%{
+        transform: rotate(0.5turn);
+    }
+}
+
+@keyframes second {
+    0% {
+      transform: none;
+    }
+    25% {
+      transform: scaleY(2);
+    }
+    50%,
+    100% {
+      transform: none;
+    }
+  }
+#circle {
+    width: 172px;
+    height: 119px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: first 1s cubic-bezier(1.000, -0.020, 0.350, 0.995) infinite;
+}
+#circle :first-child {
+    width: 10px;
+    height: 10px;
+    color: #ffffff;
+    background-color: #0004ff;
+    border: 1px solid #0004ff;
+    border-radius: 50%;
+    
+    
+}
+#circle :nth-child(2) {
+    width: 10px;
+    height: 10px;
+    color: #ffffff;
+    background-color: #eeff00;
+    border: 1px solid #eeff00;
+    border-radius: 50%;
+}
+#circle :last-child {
+    width: 10px;
+    height: 10px;
+    color: #ffffff;
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+    border-radius: 50%;
+    
+}
+/* ---------------------------------------------- */
+#stick {
+    width: 100px;
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#stick :first-child {
+    width: 10px;
+    height: 60px;
+    color: #ffffff;
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+    animation: second 1s ease-in-out infinite;
+    
+    
+}
+#stick :nth-child(2) {
+    width: 10px;
+    height: 60px;
+    color: #ffffff;
+    background-color: #ff9100;
+    border: 1px solid #ff9100;
+    animation: second 1s ease-in-out infinite;
+    animation-delay: 0.1s;
+}
+#stick :nth-child(3) {
+    width: 10px;
+    height: 60px;
+    color: #ffffff;
+    background-color: #fffb00;
+    border: 1px solid #fffb00;
+    animation: second 1s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+#stick :nth-child(4) {
+    width: 10px;
+    height: 60px;
+    color: #ffffff;
+    background-color: #00ff4c;
+    border: 1px solid #00ff4c;
+    animation: second 1s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+#stick :last-child {
+    width: 10px;
+    height: 60px;
+    color: #ffffff;
+    background-color: #0400ff;
+    border: 1px solid #0400ff;
+    animation: second 1s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
